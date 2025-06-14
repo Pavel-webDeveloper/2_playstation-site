@@ -9,6 +9,8 @@
 }
 
 /* header */
+
+                            /* BARRA NERA CON LOGO SONY */
 .barra-sony {
     height: 36px;
     background-color: black;
@@ -30,4 +32,69 @@
     width: 80%;
 }
 
+.navbar-fissa {
+    height: 64px;
+    background-color: rgb(2, 71, 131);
+    display: flex;
+}
+.nav-header {
+    width: 50%;
+}.nav-header ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+/* navbar LEFT */
+.nav-header.left {
+    background-color: rgb(124, 38, 38);
+}
+.navbar-header-left li label.dropMenu {
+    position: relative;
+}
+li .dropMenu {
+    cursor: pointer;
+}
+.navbar-header-left li .dropMenu span {
+    font-size: 18px;
+}
+/* ANIMAZIONE DI DROPDOWN */
+.navbar-header-left li .dropMenu i{
+    transition: transform 0.3s ease-in-out;
+    font-size: 13px;
+}
+input[type="radio"]{
+    opacity: 0;
+}
+input[type="radio"]:checked + label i {
+    transform: rotate(180deg);
+}
+
+input[type="radio"]:checked + label .reset-area {
+    display: block;
+    opacity: 0;
+}
+
+.reset-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+
+
+/* navbar RIGHT */
+.nav-header.right {
+    background-color: rgb(50, 117, 50);
+    
+}
 /* fine header */
+
+
+
