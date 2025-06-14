@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+/* header */
+.barra-sony {
+    height: 36px;
+    background-color: black;
+    position: relative;
+}
+.logo-sony {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    padding: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-sony img {
+    width: 80%;
+}
+
+/* fine header */
